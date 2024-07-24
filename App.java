@@ -4,22 +4,17 @@
 public class App {
 
     public static void main(String[] args) {
-        Conducteur p1 = new Conducteur("tsong", "andria", "27-08-2001", "Mon adresse", 70, "123TR");
-        // Vehicule voiture = new Vehicule("Nissan", "1012TBE", 120, 500, 15, 0);
-
-        // voiture.changerConducteur(p1);
-        // voiture.allerAlaPompe(5);
-        // voiture.rouler(20000, 10000);
+        Conducteur conducteur1 = new Conducteur("tsong", "andria", "27-08-2001", "Mon adresse", 70, "123TR");
 
         Camion camion = new Camion("Nissan", "1012TBE", 120, 500, 15, 0);
 
-        camion.changerConducteur(p1);
+        camion.changerConducteur(conducteur1);
         camion.allerAlaPompe(100);
 
-        Colis c1 = new Colis("porte", 100);
+        Colis colis1 = new Colis("porte", 100);
 
-        camion.ajouterColis(c1);
-        // camion.retirerColis(c1);
+        camion.ajouterColis(colis1);
+        // camion.retirerColis(colis11);
 
         System.out.println(camion.getPoids());
 
@@ -29,7 +24,7 @@ public class App {
 
         // carFerry1.embarquer(camion);
 
-        carFerry1.changerConducteur(p1);
+        carFerry1.changerConducteur(conducteur1);
 
         System.out.println(carFerry1.getPoids());
 
