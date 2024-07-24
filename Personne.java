@@ -11,7 +11,6 @@ public abstract class Personne {
         this.dateDeNaissance = dateDeNaissance;
         this.adresse = adresse;
         this.poids = poids ;
-
     }
 
     public int getAge() {
